@@ -1,0 +1,59 @@
+
+zabor:
+cf66719_DB
+gci5Ftjm
+
+cf66719
+Y4pfrlvfXuWd
+
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=cf66719_db
+DB_USERNAME=cf66719_db
+DB_PASSWORD=gci5Ftjm
+
+http://localhost/test/wp-login.php
+local_admin 1234
+
+IP Адрес: 
+5.200.52.148 Копировать
+Логин администратора: 
+root
+Пароль администратора: 
+61PbApbf
+
+
+http://rualert.ru/phpmyadmin
+
+http://land.dark-server.ru/wp-admin/
+dark 19601415Aa
+
+License Key PhpStorm 8 
+ 
+//math:/^[\s]+$/  
+
+User Name : EMBRACE
+===== LICENSE BEGIN =====
+43136-12042010
+00002UsvSON704l"dILe1PVx3y4"B3
+49AU6oSDJrsjE8nMOQh"8HTDJHIUUh
+gd1BebYc5U"6OxDbVsALB4Eb10PW8"
+===== LICENSE END =====
+
+User Name : TorReviver
+===== LICENSE BEGIN =====
+09574-12042010
+00000N7tVkjChpCjDvLjvELNOsgIeH
+1POKglQCIddVHUwb6RDtMpzpzeXi0Z
+RGN7yqI340MhKOu1odUVLb40g5HUF4
+===== LICENSE END =====
+
+User Name : Learn Programming
+===== LICENSE BEGIN =====
+63758-12042010
+00000Ryqh0NCC73lpRm!XVcxFChJ2g
+TUR2lZtlLXrPLbQ66Gs8MHs51RvF2y
+agoDlzne08Zm8VXbts1UMKE!EW4v8G
+===== LICENSE END =====

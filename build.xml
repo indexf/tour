@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="phing_test" default="test" basedir=".">
+<property name="one" value="HI!"/>
+    <target name="test">
+        <echo msg="${one}" />
+    </target>
+</project>

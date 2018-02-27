@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Краб-тур" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1193.000000, -5880.000000)">
+        <g id="footer" transform="translate(0.000000, 5855.000000)">
+            <g id="icon_facebook" transform="translate(1193.000000, 25.000000)">
+                <rect id="Rectangle" x="0" y="0" width="36" height="36"></rect>
+                <circle id="Oval" stroke="#F57723" stroke-width="2" cx="18" cy="18" r="17"></circle>
+                <path d="M19.0756683,28.6363636 L15.085016,28.6363636 L15.085016,19.226085 L13.0909091,19.226085 L13.0909091,15.9836187 L15.085016,15.9836187 L15.085016,14.0369512 C15.085016,11.3919063 16.210397,9.81818182 19.4097467,9.81818182 L22.0726201,9.81818182 L22.0726201,13.0618359 L20.4083243,13.0618359 C19.1628457,13.0618359 19.0805453,13.5149497 19.0805453,14.360604 L19.0750587,15.9836187 L22.0909091,15.9836187 L21.7379321,19.226085 L19.0750587,19.226085 L19.0750587,28.6363636 L19.0756683,28.6363636 Z" id="Shape" fill="#F57723"></path>
+            </g>
+        </g>
+    </g>
+</svg>

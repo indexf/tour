@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="13px" viewBox="0 0 17 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Внутренняя-Тур" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-250.000000, -1136.000000)">
+        <g id="body" transform="translate(0.000000, 728.000000)" fill="#F57723" fill-rule="nonzero">
+            <g id="blok-tour" transform="translate(249.000000, 61.000000)">
+                <g id="в-тур" transform="translate(0.000000, 290.000000)">
+                    <g id="Group-6" transform="translate(1.000000, 52.000000)">
+                        <g id="1">
+                            <g id="tick" transform="translate(0.000000, 5.000000)">
+                                <path d="M16.7510391,0.259254149 C16.4191079,-0.0864180498 15.8809523,-0.0864180498 15.5489547,0.259254149 L5.36543583,10.8633833 L1.4510578,6.7873694 C1.11912656,6.4416972 0.58097097,6.44173177 0.248973329,6.7873694 C-0.0829911096,7.13300702 -0.0829911096,7.6933846 0.248973329,8.0390568 L4.7643936,12.7408625 C5.09622522,13.0865002 5.63477925,13.0862581 5.96647807,12.7408625 L16.7510391,1.51097612 C17.0830036,1.1653385 17.0829704,0.604926348 16.7510391,0.259254149 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

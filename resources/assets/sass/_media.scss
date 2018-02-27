@@ -1,0 +1,98 @@
+@media all and (max-width: 1294px) {
+  .slick-slider--show {
+    margin-bottom: -5px;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .about_comment--slick {
+    width: 626px !important;
+  }
+  .about_comment--slick .slick-prev {
+    left: -70px;
+  }
+  .about_comment--slick .slick-next {
+    right: -70px;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .list-style {
+    margin-top: 40px;
+  }
+  .header--container {
+    background-color: #fff;
+  }
+  .nav-link {
+    color: #000;
+  }
+  .item-logo,
+  .header--table {
+    display: none !important;
+  }
+  .about_info--block {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  .about_info--text {
+    order: 1;
+  }
+  .about_command--slick {
+    width: 615px !important;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .main_feedback--block > div + div {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+  .footer--row:first-child {
+    margin-bottom: 0;
+  }
+  .footer--nav {
+    margin-bottom: 1rem;
+  }
+  .footer--text {
+    margin-bottom: 1rem;
+  }
+  .footer--cop {
+    margin-top: 1rem;
+  }
+  .tour_features--map {
+    margin-top: 60px;
+  }
+  .slick-slider--show {
+    position: relative;
+    margin-bottom: 120px;
+  }
+  .slick-slider--show .slick-arrow {
+    position: absolute;
+    top: auto;
+    bottom: -105px;
+  }
+  .slick-slider--show .slick-next.slick-arrow {
+    margin-right: 100px;
+  }
+  .slick-slider--show .slick-prev.slick-arrow {
+    margin-left: 100px;
+  }
+  .slick-slider--prev {
+    display: none;
+  }
+  .about_info--container {
+    align-items: center;
+  }
+  .about_command--slick {
+    width: 345px !important;
+    margin-bottom: 60px;
+  }
+  .about_comment--slick {
+    width: 305px !important;
+  }
+  .about_comment {
+    padding-bottom: 120px;
+  }
+}
