@@ -1,7 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project name="phing_test" default="test" basedir=".">
-<property name="one" value="HI!"/>
-    <target name="test">
-        <echo msg="${one}" />
+<project name="test" default="main" basedir=".">
+
+    <property name="project.basedir" value="/var/www/html/test" />
+    <property name="GLOBAL_LIB_DIR" value="${project.basedir}/vendor/libs" />
+    <property name="DEPLOY_DIR" value="deploy" />
+    <property name="CSS_DIR" value="public/css" />
+    <property name="JS_DIR" value="public/js" />
+    <taskdef name="stubjsmin" classname="phing.tasks.my.stubJsMinTask" />
+    <taskdef name="stubcssmin" classname="phing.tasks.my.stubCssMinTask" />
+
+    <fileset id="srccss" dir="${CSS_DIR}">
+        <include name="test.css" />
+    </fileset>
+
+    <fileset id="srcjs" dir="${JS_DIR}">
+        <include name="app.js" />
+    </fileset>
+
+
+    <target name="main" depends="git.pull,chmod,migrate,properties.local,minify">
+        <echo msg="Main end..." />
     </target>
+
+    <target name="minifycss">
+        <stubcssmin cssminpath="${GLOBAL_LIB_DIR}/cssmin.php"
+                    targetdir="${DEPLOY_DIR}/${CSS_DIR}">
+            <fileset refid="srccss" />
+        </stubcssmin>
+    </target>
+
+    <target name="minifyjs">
+        <stubjsmin jsminpath="${GLOBAL_LIB_DIR}/jsmin.php"
+                   targetdir="${DEPLOY_DIR}/${JS_DIR}">
+            <fileset refid="srcjs" />
+        </stubjsmin>
+    </target>
+
+    <target name="minify" depends="minifyjs,minifycss">
+        <echo msg="Minify"/>
+    </target>
+
+
+    <target name="unittest">
+        <phpunit>
+            <formatter type="plain" usefile="false"/>
+            <batchtest>
+                <fileset dir="tests">
+                    <include name="Feature/*Test.php"/>
+                </fileset>
+            </batchtest>
+        </phpunit>
+    </target>
+
+
+
+
+    <target name="git.pull">
+        <gitpull
+                repository="${project.basedir}"
+                 all="true" />
+        <echo msg="Git Pull ..." />
+    </target>
+
+
+    <target name="chmod">
+        <exec command="chmod -R 0755 ${project.basedir}"/>
+        <echo msg="ChMod ..." />
+    </target>
+
+    <target name="migrate">
+        <exec command="php artisan migrate"/>
+        <echo msg="Migrate ..." />
+    </target>
+
+    <target name="properties.local">
+        <property file="local.properties" />
+        <phingcall target="copy_env" />
+        <echo msg="Local Deploy ..." />
+    </target>
+
+    <target name="properties.dev">
+        <property file="dev.properties" />
+
+        <phingcall target="copy_env" />
+    </target>
+
+
+    <target name="copy_env">
+        <copy file="${project.basedir}/.env.example"
+              tofile="${project.basedir}/.env" overwrite="true">
+            <filterchain>
+                <replacetokens begintoken="[[" endtoken="]]">
+                    <token key="hostname" value="${db.hostname}" />
+                    <token key="database" value="${db.name}" />
+                    <token key="username" value="${db.user}" />
+                    <token key="password" value="${db.pass}" />
+                    <token key="port" value="${db.port}" />
+                    <token key="type" value="${db.type}" />
+                    <token key="app_debug" value="${log.app_debug}" />
+                </replacetokens>
+            </filterchain>
+        </copy>
+    </target>
+
 </project>
